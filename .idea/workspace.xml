@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="finally done :)" />
+    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="apparently i was supposed to move this??" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\development\personal" />
       <recent name="Z:\development\cpatech\u6\" />
     </key>
   </component>
@@ -89,7 +90,7 @@
       <workItem from="1677964672464" duration="695000" />
       <workItem from="1677965378369" duration="1866000" />
       <workItem from="1677967300633" duration="5494000" />
-      <workItem from="1677982929247" duration="3958000" />
+      <workItem from="1677982929247" duration="4655000" />
     </task>
     <task id="LOCAL-00001" summary="first update bois">
       <created>1677965082851</created>
@@ -182,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677986892714</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="reorganizing">
+      <created>1677987043611</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677987043611</updated>
+    </task>
+    <task id="LOCAL-00015" summary="apparently i was supposed to move this??">
+      <created>1677987091037</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677987091037</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +261,9 @@
     <MESSAGE value="more stuff added~" />
     <MESSAGE value="more stuff looooooool" />
     <MESSAGE value="finally done :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally done :)" />
+    <MESSAGE value="reorganizing" />
+    <MESSAGE value="apparently i was supposed to move this??" />
+    <option name="LAST_COMMIT_MESSAGE" value="apparently i was supposed to move this??" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/development$keyboard.coverage" NAME="keyboard Coverage Results" MODIFIED="1677952143767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
