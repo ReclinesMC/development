@@ -81,7 +81,7 @@ def userMenu(userID, studentInfo):
 				userMenu(userID, studentInfo)
 
 			print(studentInfo[1], admins, studentInfo[1] in admins)
-			if studentID in studentDirectory and studentID[1] not in admins:
+			if studentID in studentDirectory and studentInfo[1] not in admins:
 				getStudentInfo(studentID, studentInfo)
 
 			else:
@@ -95,8 +95,7 @@ def userMenu(userID, studentInfo):
 		else:
 			print("Invalid Choice!")
 			t.sleep(errorDelay)
-
-
+			userMenu(userID, studentInfo)
 def getStudentInfo(studentID, studentInfo):
 	s.system("clear")
 	print("[ Student Information ]".center(50, "="))

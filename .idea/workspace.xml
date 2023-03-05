@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="im sorry but the workspace file is dumb" />
+    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="frick u workspace.xml">
+      <change beforePath="$PROJECT_DIR$/cpatech/Unit 6/Lab 6 - Student Directory &amp; Logging in 5.py" beforeDir="false" afterPath="$PROJECT_DIR$/cpatech/Unit 6/Lab 6 - Student Directory &amp; Logging in 5.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +92,7 @@
       <workItem from="1677964672464" duration="695000" />
       <workItem from="1677965378369" duration="1866000" />
       <workItem from="1677967300633" duration="5494000" />
-      <workItem from="1677982929247" duration="5021000" />
+      <workItem from="1677982929247" duration="5477000" />
     </task>
     <task id="LOCAL-00001" summary="first update bois">
       <created>1677965082851</created>
@@ -204,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677987712061</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="frick u workspace.xml">
+      <created>1677988256517</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677988256517</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +280,8 @@
     <MESSAGE value="reorganizing" />
     <MESSAGE value="apparently i was supposed to move this??" />
     <MESSAGE value="im sorry but the workspace file is dumb" />
-    <option name="LAST_COMMIT_MESSAGE" value="im sorry but the workspace file is dumb" />
+    <MESSAGE value="frick u workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="frick u workspace.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/development$keyboard.coverage" NAME="keyboard Coverage Results" MODIFIED="1677952143767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -280,6 +290,7 @@
     <SUITE FILE_PATH="coverage/development$Lab6.coverage" NAME="Lab6 Coverage Results" MODIFIED="1677959267100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cpatech/Unit 6" />
     <SUITE FILE_PATH="coverage/death_py$lessdead.coverage" NAME="lessdead Coverage Results" MODIFIED="1677983089049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/death_py$Lab_6.coverage" NAME="Lab 6 Coverage Results" MODIFIED="1677983281939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cpatech/Unit 6" />
+    <SUITE FILE_PATH="coverage/death_py$Lab_6___Student_Directory___Logging_in_5.coverage" NAME="Lab 6 - Student Directory &amp; Logging in 5 Coverage Results" MODIFIED="1677988313400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cpatech/Unit 6" />
     <SUITE FILE_PATH="coverage/development$Lab_6.coverage" NAME="Lab 6 Coverage Results" MODIFIED="1677954953373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tech/Unit 6" />
     <SUITE FILE_PATH="coverage/development$FileTools.coverage" NAME="FileTools Coverage Results" MODIFIED="1677956012437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cpatech/Unit 6" />
   </component>
