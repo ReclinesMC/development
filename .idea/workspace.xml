@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="more stuff looooooool">
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 10 - For Turtle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 11 - Multiples 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 2 - Gullible.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 3 - Logging In 4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 4 - Simple For Loop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 5 - Bottles of Milk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 6 - Spongecase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 7 - Reverse a String.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 8 - Clean Text 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/Lab 9 - While Turtle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 4/NOTES - For Loops.py" afterDir="false" />
-    </list>
+    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="finally done :)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +89,7 @@
       <workItem from="1677964672464" duration="695000" />
       <workItem from="1677965378369" duration="1866000" />
       <workItem from="1677967300633" duration="5494000" />
-      <workItem from="1677982929247" duration="3645000" />
+      <workItem from="1677982929247" duration="3958000" />
     </task>
     <task id="LOCAL-00001" summary="first update bois">
       <created>1677965082851</created>
@@ -187,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677986386128</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finally done :)">
+      <created>1677986892714</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677986892714</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +245,8 @@
     <MESSAGE value="slowly adding stuff" />
     <MESSAGE value="more stuff added~" />
     <MESSAGE value="more stuff looooooool" />
-    <option name="LAST_COMMIT_MESSAGE" value="more stuff looooooool" />
+    <MESSAGE value="finally done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally done :)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/development$keyboard.coverage" NAME="keyboard Coverage Results" MODIFIED="1677952143767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
