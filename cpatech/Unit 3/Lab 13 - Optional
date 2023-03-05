@@ -1,0 +1,10 @@
+
+
+# You think I was gonna put the effort into making this?
+
+
+
+Sorting Mixed Data
+You have been provided with a list of integers and characters. The .sort() function cannot sort lists with mixed data types so you will design your own.
+
+Design a program that will sort the given list based on the elements' ASCII values. Your program does not need to work for more than 4 elements in a list, but it should work for any 4 elements in a list. You will need to use the ord() function (from Unit 1). Be sure to save the sorted list in some variable so it can be referenced.

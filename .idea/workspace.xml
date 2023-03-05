@@ -4,34 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="slowly adding stuff">
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 1/Lab 1 - Practicing Print.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 1/Lab 2 - (NOTES) Data Manipulation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 1/Lab 3 - Debugging Practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 1/Lab 4 - (NOTES) Input &amp; Format.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 1/Lab 5 - Doctor's Office.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 1 (mini) - List Practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 10 (mini) - Rock Paper Scissors 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 11 (mini) - Split.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 12 (mini) - Join.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 2 (mini) - Dictionary Practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 3 - Student Information (list).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 4 - Into the Matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 5 - Student Information (dictionary).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 6 - Student Directory 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 7 - Student Directory 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 8 (mini) - Time Library.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/Lab 9 (mini) - Random Library.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Collections Misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Dictionaries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Join Function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Lists.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Math Library.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Random Library.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Sets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Split Function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Time Library.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cpatech/Unit 2/NOTES - Tuples.py" afterDir="false" />
+    <list default="true" id="2dd214e7-9663-440f-bc02-f3875f38c599" name="Changes" comment="more stuff added~">
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 1 - Logging In 1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 10 - Grade Classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 11 - College Credits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 12 - Fashionable Weather.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 13 - Optional" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 14 - Logging In 2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 15 - Rock Paper Scissors 2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 16 - Number Guessing Game 1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 2 - Overtime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 3 - Multiples 1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 4 - Evens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 5 - Min &amp; Max.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 6 - Student Directory 3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 7 - Student Directory 4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 8 - Date Corrector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/Lab 9 - Sort 3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/NOTES - If Statements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/NOTES - If-Elif-Else Statements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/NOTES - If-Else Statements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpatech/Unit 3/NOTES - Try Except.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +111,7 @@
       <workItem from="1677964672464" duration="695000" />
       <workItem from="1677965378369" duration="1866000" />
       <workItem from="1677967300633" duration="5494000" />
-      <workItem from="1677982929247" duration="2729000" />
+      <workItem from="1677982929247" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="first update bois">
       <created>1677965082851</created>
@@ -190,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677984991601</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="more stuff added~">
+      <created>1677985687752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677985687752</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +251,8 @@
     <MESSAGE value="what" />
     <MESSAGE value="workspace change wooo" />
     <MESSAGE value="slowly adding stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="slowly adding stuff" />
+    <MESSAGE value="more stuff added~" />
+    <option name="LAST_COMMIT_MESSAGE" value="more stuff added~" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/development$keyboard.coverage" NAME="keyboard Coverage Results" MODIFIED="1677952143767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
