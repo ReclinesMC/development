@@ -80,7 +80,8 @@ def userMenu(userID, studentInfo):
 				t.sleep(errorDelay)
 				userMenu(userID, studentInfo)
 
-			if studentID in studentDirectory and studentInfo[1] not in admins:
+			print(studentInfo[1], admins, studentInfo[1] in admins)
+			if studentID in studentDirectory and studentID[1] not in admins:
 				getStudentInfo(studentID, studentInfo)
 
 			else:
