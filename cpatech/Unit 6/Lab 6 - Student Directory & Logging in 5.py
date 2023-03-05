@@ -165,6 +165,7 @@ def createStudent(adminID):
 	studentDirectory[studentID] = [password, firstName.capitalize(), lastName.capitalize(), middleName.capitalize(), dob, str(grade), gpa]
 	print("Please review the information above.")
 	input("Press enter to continue...")
+	writeOutStudentInfo()
 	print("Student created!")
 	sleep()
 	return userMenu(adminID)
@@ -187,7 +188,6 @@ def main():
 		userID = login()
 		studentDirectory[userID]
 		userMenu(userID)
-		writeOutStudentInfo()
 
 
 if __name__ == "__main__":
