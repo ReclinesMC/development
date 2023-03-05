@@ -6,7 +6,7 @@ import time as t
 import os as s
 
 studentDirectory = {}
-delay = 1.5
+errorDelay = 1.5
 
 
 def formatStudentDirectory(directoryFile):
@@ -22,10 +22,10 @@ def formatStudentDirectory(directoryFile):
 				for info in i:
 					info = info.strip()
 					studentDirectory[user].append(info)
-				return True
 			except:
 				print("Corrupt data!")
 				return False
+	return True
 
 
 def login():
@@ -33,38 +33,39 @@ def login():
 	print(">> Login")
 	try:
 		userID = int(input("Enter your ID: "))
+
 	except:
 		print("You must enter a valid ID!")
-		t.sleep(delay)
+		t.sleep(errorDelay)
 		s.system("clear")
-		login()
+		return login()
+
 	password = input("Enter your password: ")
+
 	if validateLogin(userID, password):
 		return userID
+
 	else:
 		print("Invalid Login!")
-		t.sleep(delay)
+		t.sleep(errorDelay)
 		s.system("clear")
-		login()
+		return login()
 
 
 def validateLogin(username, password):
-	try:
-		studentDirectory[username]
-	except:
-		return False
-	if studentDirectory[username][0] == password:
+	if username in studentDirectory and studentDirectory[username][0] == password:
 		return True
+
 	else:
 		return False
 
 
-def userMenu(userID):
+def userMenu(userID, studentInfo):
 	admins = ["ADMIN"]
-	if studentDirectory[userID][1] in admins:
+	if studentInfo[1] in admins:
 		s.system("clear")
 		print("[ Admin GUI ]".center(50, "="))
-		print(f"Welcome {studentDirectory[userID][1]}!")
+		print(f"Welcome {studentInfo[1]}!")
 		print("What would you like to do?")
 		print("1 - View Student Information")
 		print("2 - Create a New Student")
@@ -73,32 +74,36 @@ def userMenu(userID):
 		if choice == "1":
 			try:
 				studentID = int(input("Student ID:  "))
+
 			except:
 				print("Invalid Student ID!")
-				t.sleep(delay)
+				t.sleep(errorDelay)
 				userMenu(userID)
-			if studentID in studentDirectory:
-				getStudentInfo(studentID)
+
+			if studentID in studentDirectory and studentInfo[1] not in admins:
+				getStudentInfo(studentID, studentInfo)
+
 			else:
-				print("Invalid Student!")
-				t.sleep(delay)
-				userMenu(userID)
+				print("That is not a valid student!")
+				t.sleep(errorDelay)
+				userMenu(userID, studentInfo)
+
 		elif choice == "2":
 			createStudent()
 
 		else:
 			print("Invalid Choice!")
-			t.sleep(delay)
+			t.sleep(errorDelay)
 
 
-def getStudentInfo(studentID):
+def getStudentInfo(studentID, studentInfo):
 	s.system("clear")
 	print("[ Student Information ]".center(50, "="))
-	print(f'\nFull Name: {studentDirectory[studentID][0]} {studentDirectory[studentID][1]} {studentDirectory[studentID][2]}')
+	print(f'\nFull Name: {studentInfo[0]} {studentInfo[1]} {studentInfo[2]}')
 	print(f"Student ID: {studentID}")
-	print(f"DOB: {studentDirectory[studentID][3]}")
-	print(f"Grade: {studentDirectory[studentID][4]}")
-	print(f"GPA: {studentDirectory[studentID][5]}\n")
+	print(f"DOB: {studentInfo[3]}")
+	print(f"Grade: {studentInfo[4]}")
+	print(f"GPA: {studentInfo[5]}\n")
 
 
 def createStudent():
@@ -121,7 +126,8 @@ def main():
 	formatted = formatStudentDirectory(directoryFile)
 	if formatted:
 		userID = login()
-		userMenu(userID)
+		studentInfo = studentDirectory[userID]
+		userMenu(userID, studentInfo)
 		writeOutStudentInfo()
 
 
