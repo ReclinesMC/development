@@ -6,7 +6,10 @@ import time as t
 import os as s
 
 studentDirectory = {}
-errorDelay = 1.5
+
+
+def sleep():
+	t.sleep(1.5)
 
 
 def formatStudentDirectory(directoryFile):
@@ -28,6 +31,7 @@ def formatStudentDirectory(directoryFile):
 	return True
 
 
+# noinspection PyStatementEffect
 def login():
 	print("[ Student Directory ]".center(50, "="))
 	print(">> Login")
@@ -36,7 +40,7 @@ def login():
 
 	except:
 		print("You must enter a valid ID!")
-		t.sleep(errorDelay)
+		sleep()
 		s.system("clear")
 		return login()
 
@@ -47,7 +51,7 @@ def login():
 
 	else:
 		print("Invalid Login!")
-		t.sleep(errorDelay)
+		sleep()
 		s.system("clear")
 		return login()
 
@@ -60,15 +64,19 @@ def validateLogin(username, password):
 		return False
 
 
-def userMenu(userID, studentInfo):
+def userMenu(userID):
+	studentInfo = studentDirectory[userID]
 	admins = ["ADMIN"]
+
 	if studentInfo[1] in admins:
+		admin = userID
 		s.system("clear")
 		print("[ Admin GUI ]".center(50, "="))
 		print(f"Welcome {studentInfo[1]}!")
 		print("What would you like to do?")
 		print("1 - View Student Information")
 		print("2 - Create a New Student")
+		print("3 - Exit")
 		choice = input("Choose an option >> ")
 
 		if choice == "1":
@@ -77,37 +85,89 @@ def userMenu(userID, studentInfo):
 
 			except:
 				print("Invalid Student ID!")
-				t.sleep(errorDelay)
-				userMenu(userID, studentInfo)
+				sleep()
+				return userMenu(userID)
 
-			print(studentInfo[1], admins, studentInfo[1] in admins)
-			if studentID in studentDirectory and studentInfo[1] not in admins:
-				getStudentInfo(studentID, studentInfo)
+			if studentID in studentDirectory and studentDirectory[studentID][1] not in admins:
+				return getStudentInfo(studentID, admin)
 
 			else:
 				print("That is not a valid student!")
-				t.sleep(errorDelay)
-				userMenu(userID, studentInfo)
+				sleep()
+				return userMenu(userID)
 
 		elif choice == "2":
-			createStudent()
+			createStudent(admin)
 
+		elif choice == "3":
+			print("Goodbye!")
+			sleep()
+			s.system("clear")
+			return True
 		else:
 			print("Invalid Choice!")
-			t.sleep(errorDelay)
-			userMenu(userID, studentInfo)
-def getStudentInfo(studentID, studentInfo):
+			sleep()
+			return userMenu(userID)
+	else:
+		return getStudentInfo(userID)
+
+
+def getStudentInfo(studentID, adminID=0):
+	studentInfo = studentDirectory[studentID]
 	s.system("clear")
 	print("[ Student Information ]".center(50, "="))
-	print(f'\nFull Name: {studentInfo[0]} {studentInfo[1]} {studentInfo[2]}')
+	print(f'\nFull Name: {studentInfo[1]} {studentInfo[2]} {studentInfo[3]}')
 	print(f"Student ID: {studentID}")
-	print(f"DOB: {studentInfo[3]}")
-	print(f"Grade: {studentInfo[4]}")
-	print(f"GPA: {studentInfo[5]}\n")
+	print(f"DOB: {studentInfo[4]}")
+	print(f"Grade: {studentInfo[5]}")
+	print(f"GPA: {studentInfo[6]}\n")
+	if adminID != 0:
+		input("Press enter to return to the admin menu...")
+		return userMenu(adminID)
 
 
-def createStudent():
-	pass
+def createStudent(adminID):
+	s.system("clear")
+	print("[ Student Creator ]".center(50, "="))
+	print("Enter the following information:")
+	try:
+		studentID = int(input("Student ID: "))
+	except:
+		print("Invalid student ID!")
+		# noinspection PyStatementEffect
+		sleep()
+		return createStudent(adminID)
+
+	# I really need to start commenting my code better
+	if studentID in studentDirectory:
+		print("That student ID is already in use!")
+		sleep()
+		return createStudent(adminID)
+
+	elif len(str(studentID)) != 7:
+		print("Student ID must be 7 digits!")
+		sleep()
+		return createStudent(adminID)
+
+	firstName = input("First Name: ")
+	middleName = input("Middle Name: ")
+	lastName = input("Last Name: ")
+	dob = input("Date of Birth (MM/DD/YYYY): ")
+	try:
+		grade = int(input("Grade: "))
+	except:
+		print("Grade must be a number!")
+		sleep()
+		return createStudent(adminID)
+
+	gpa = input("GPA: ")
+	password = input("Password: ")
+	studentDirectory[studentID] = [password, firstName, lastName, middleName, dob, str(grade), gpa]
+	print("Please review the information above.")
+	input("Press enter to continue...")
+	print("Student created!")
+	sleep()
+	return userMenu(adminID)
 
 
 def writeOutStudentInfo():
@@ -126,8 +186,8 @@ def main():
 	formatted = formatStudentDirectory(directoryFile)
 	if formatted:
 		userID = login()
-		studentInfo = studentDirectory[userID]
-		userMenu(userID, studentInfo)
+		studentDirectory[userID]
+		userMenu(userID)
 		writeOutStudentInfo()
 
 
