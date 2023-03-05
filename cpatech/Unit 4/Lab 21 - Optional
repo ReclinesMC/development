@@ -1,0 +1,28 @@
+# give up lol
+
+
+
+Mad Hacker Skills
+A brute force attack relies on or is achieved through the application of force, effort, or power instead of more efficient, carefully planned, or precisely directed methods
+
+In this lab you will be designing a program that will attempt to brute force a password. Create a variable that stores a permanent password (this is not a user input). Your program should attempt every possible password and stop when the password is correct. Keep in mind that your code should generate a whole password, compare it to the ENTIRE stored password - you are not checking one symbol at a time.
+
+You have been provided with 4 collections that you should use to assist you.
+
+Requirements
+Assume that the only thing you know for certain is the length of the stored password
+
+Once the correct password is found, a message should be desiplayed to the user and the program should end - do not continue searching. (This is an appropriate time for the break keyword or the exit function)
+
+Answer the questions below - store your responses as comments at the top of your file, underneath your heading.
+
+Questions
+We learned that the number of times a set of nested loops will run can be described as the number of iterations each nested loop has all multiplied together. For example, the following nested loops run a total of 30 times:
+
+for i in range(5):
+    for j in range(6):
+        print(i, j)
+If the user's password has a length of 4 and ONLY contains integers, what is the maximum number of possibilities that your program will have to try?
+If the user's password has a length of 6 and ONLY contains lowercase letters, what is the maximum number of possibilities that your program will have to try?
+It is pretty common for users to be required to use a password of length 8 that contains at least one uppercase letter, one lowercase letter, one number, and one special character. What is the maximum number of possibilities that a brute force hacker will have to try?
+Explain in ONE SENTENCE how your discoveries in this lab relate to real-world software security.

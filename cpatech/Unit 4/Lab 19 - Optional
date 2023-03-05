@@ -1,0 +1,6 @@
+# pffft you thought I would do an optional lab AGAIN? u must fr think im not lazy or something
+
+Deep Cave
+Design a simple ASCII animation that looks like an unending cave. Define a screen with and a cave width. Your program should continuously display the next level of the cave - each level may be slightly modified from the last. You may use an infinite while loop for this project.
+
+See Google Classroom for a screenshot of the potential output. Keep in mind that the lines of code should continue indefinitely and that your cave should never go off screen.

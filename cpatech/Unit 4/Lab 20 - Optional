@@ -1,0 +1,11 @@
+# lol
+
+
+Hex Grid
+Design a program that will create a hexagon tessellation on your output screen. Avoid creating large strings that you repeat - your code should allow you to change the width and height of total output. The width and height values can be hardcoded or user input.
+
+You will need to use nested loops for this project.
+
+Review Google Classroom for the target output.
+
+BONUS: For +1 bonus point, design your program so that it has a hexSize variable. This variable should control the side length for your hexagons. The sample shown on Google Classroom is hexSize = 1. To give you an idea, the output with hexSize = 3 should use 3 underscores as the top and bottom and 3 slashes to make up each diagonal.
