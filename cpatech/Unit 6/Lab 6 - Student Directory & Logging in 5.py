@@ -162,7 +162,7 @@ def createStudent(adminID):
 
 	gpa = input("GPA: ")
 	password = input("Password: ")
-	studentDirectory[studentID] = [password, firstName, lastName, middleName, dob, str(grade), gpa]
+	studentDirectory[studentID] = [password, firstName.capitalize(), lastName.capitalize(), middleName.capitalize(), dob, str(grade), gpa]
 	print("Please review the information above.")
 	input("Press enter to continue...")
 	print("Student created!")
@@ -178,7 +178,6 @@ def writeOutStudentInfo():
 		contents += ', '.join(studentDirectory[i])
 		contents += "\n"
 	ft.handleFile(outputFile, "create", contents)
-	print(contents)
 
 
 def main():
