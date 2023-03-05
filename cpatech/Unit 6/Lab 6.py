@@ -78,7 +78,7 @@ def userMenu(userID, studentInfo):
 			except:
 				print("Invalid Student ID!")
 				t.sleep(errorDelay)
-				userMenu(userID)
+				userMenu(userID, studentInfo)
 
 			if studentID in studentDirectory and studentInfo[1] not in admins:
 				getStudentInfo(studentID, studentInfo)
