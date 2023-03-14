@@ -31,7 +31,6 @@ def formatStudentDirectory(directoryFile):
 	return True
 
 
-# noinspection PyStatementEffect
 def login():
 	print("[ Student Directory ]".center(50, "="))
 	print(">> Login")
@@ -134,7 +133,6 @@ def createStudent(adminID):
 		studentID = int(input("Student ID: "))
 	except:
 		print("Invalid student ID!")
-		# noinspection PyStatementEffect
 		sleep()
 		return createStudent(adminID)
 
