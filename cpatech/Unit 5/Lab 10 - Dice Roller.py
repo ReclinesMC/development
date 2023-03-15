@@ -2,8 +2,8 @@
 # Dice Roller
 # Make a program that simulates rolling a specified amount of dice with a specified amount of sides
 import os as s
-import re
 import random as r
+import re
 
 
 def getDiceRolls():

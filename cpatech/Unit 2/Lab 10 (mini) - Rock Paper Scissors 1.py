@@ -19,6 +19,4 @@ print("Scissors")
 time.sleep(0.4)
 print("Shoot!")
 
-
 print("\nYou chose {} and I chose {}!".format(userChoice, pyChoice))
-

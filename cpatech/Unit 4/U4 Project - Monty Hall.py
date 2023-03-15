@@ -2,8 +2,8 @@
 # The Monty Hall Problem
 # Using loops, simulate the Monty Hall problem
 
-import random as r
 import os as s
+import random as r
 
 simCount = ""
 doors = ["Zonk", "Zonk", "Car"]

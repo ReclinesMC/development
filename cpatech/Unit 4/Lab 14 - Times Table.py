@@ -10,4 +10,3 @@ for i in range(1, 13):
 		print(str(i * e).rjust(3), end=" ")
 
 print()
-

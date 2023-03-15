@@ -1,8 +1,8 @@
 # Sean A
 # Dice Rolling Simulator
 # Based on how many dices are rolled and how many times they are rolled, simulate the experience of rolling them
-import random as r
 import os as s
+import random as r
 
 diceCount = ""
 rollCount = ""

@@ -1,13 +1,12 @@
 # Sean A
 # Dice Roll simulation
 # Work with the time and math library to create a dice roll simulation
-from time import sleep
-from random import randint
 import os
+from random import randint
+from time import sleep
 
 dice1 = randint(1, 6)
 dice2 = randint(1, 6)
-
 
 pause = input("Press enter to roll the dice")
 os.system("clear")
@@ -36,4 +35,3 @@ print("{} {} {}".format(chr(166), "  ", chr(166)))
 print("{} {} {}{}".format(chr(166), dice2, " ", chr(166)))
 print("{} {} {}".format(chr(166), "  ", chr(166)))
 print(" {}{}{}{} ".format(chr(175), chr(175), chr(175), chr(175)))
-

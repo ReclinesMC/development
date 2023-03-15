@@ -28,4 +28,3 @@ if numInput % 9 == 0:
 
 print()
 print("{} has the following multiples: {} ".format(numInput, ", ".join(multiples)))
-

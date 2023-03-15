@@ -33,5 +33,3 @@ try:
 
 except:
 	print("You must enter an integer between 1 and 100 ")
-
-

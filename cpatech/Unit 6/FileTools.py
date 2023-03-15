@@ -2,8 +2,8 @@
 # FileHandler
 # This file's purpose is to handle a file name, and then read or write to that file.
 # This was so painful to make 😭
-import re
 import os as s
+import re
 
 verbose = True
 

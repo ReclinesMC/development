@@ -50,4 +50,3 @@ elif userChoice == "Scissors":
 		print("It's a tie!")
 else:
 	print("Unable to determine a result, you may have typed your choice incorrectly.")
-

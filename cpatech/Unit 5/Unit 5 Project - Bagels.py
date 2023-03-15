@@ -1,8 +1,8 @@
 # Sean A
 # Bagels
 # Make a deductive logic game that allows for the user to guess a random number
-import random as r
 import os as s
+import random as r
 import re
 import time as t
 

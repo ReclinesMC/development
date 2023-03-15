@@ -1,7 +1,7 @@
 aSet = {3, 6, 12, "hello", 'x'}
 aList = ["purple", "apple", 34, 6]
 aTuple = (3, 6, 1)
-aDict = {"name":"Jane", "apple":"green", "cost":15, 2:100}
+aDict = {"name": "Jane", "apple": "green", "cost": 15, 2: 100}
 
 print(aSet)
 print(aList)

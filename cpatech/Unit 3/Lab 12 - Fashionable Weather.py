@@ -18,4 +18,3 @@ try:
 		print("It's pretty cold, a coat or jacket is recommended")
 except:
 	print("Please enter an integer for your temperature value")
-

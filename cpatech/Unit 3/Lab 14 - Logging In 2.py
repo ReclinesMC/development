@@ -27,6 +27,3 @@ if user in users:
 		print("Invalid username or password")
 else:
 	print("Invalid username or password")
-
-
-

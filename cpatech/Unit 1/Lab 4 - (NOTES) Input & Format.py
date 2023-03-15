@@ -9,9 +9,6 @@ score = 97
 
 print("{} {}, your final score is {}%.".format(first, last, score))
 
-
-
-
 # Input
 value = input("Enter a string or character: ")
 print(type(value))

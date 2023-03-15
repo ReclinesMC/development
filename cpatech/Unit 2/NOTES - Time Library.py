@@ -18,4 +18,4 @@ time.sleep(5)
 print("World!")
 
 end = time.time()
-print("\nYour program ran for {} seconds".format(end-start))
+print("\nYour program ran for {} seconds".format(end - start))

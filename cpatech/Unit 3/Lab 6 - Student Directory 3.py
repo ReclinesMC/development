@@ -17,7 +17,7 @@ print("{  }".center(50, "-"))
 if studentID in studentDirectory:
 	print("[ Student Information ]".center(50, "="))
 	print("\nFull Name: {} {} {}".format(studentDirectory[studentID][0], studentDirectory[studentID][1],
-										 studentDirectory[studentID][2]))
+	                                     studentDirectory[studentID][2]))
 	print("Student ID: {}".format(studentID))
 	print("DOB: {}".format(studentDirectory[studentID][3]))
 	print("Grade: {}".format(studentDirectory[studentID][4]))

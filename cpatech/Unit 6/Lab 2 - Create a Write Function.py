@@ -3,8 +3,6 @@
 # Using the new operators we have learned, create a function that allows writing to a file
 # Also we should not talk about the submission time of this project, I swear I was on task 🥲
 import FileTools as fh
-import os as s
-import time as t
 
 
 def main():
@@ -77,7 +75,7 @@ def main():
 			task = "write"
 			fileName = "a_b_c.txt"
 			contents = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "\nQ", "R", "S",
-						"T", "U", "V", "W", "X", "Y", "Z"]
+			            "T", "U", "V", "W", "X", "Y", "Z"]
 
 		elif testNum == 7:  # Test 7
 			print("Task - \"write\"")

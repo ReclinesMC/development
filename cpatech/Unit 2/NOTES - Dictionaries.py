@@ -1,4 +1,4 @@
-fruitDict = {"apple":"red", "orange":"orange", "banana":"yellow"}
+fruitDict = {"apple": "red", "orange": "orange", "banana": "yellow"}
 otherDict = {}
 
 print(fruitDict)
@@ -10,7 +10,7 @@ print(fruitDict.get("banana"))
 print()
 
 fruitDict["grapes"] = "purple"
-fruitDict.update({"kiwi":"green"})
+fruitDict.update({"kiwi": "green"})
 
 print(fruitDict)
 print()

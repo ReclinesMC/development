@@ -57,5 +57,3 @@ print(AminusB)
 print(BminusA)
 print(BunionC)
 print(CintersectA)
-
-

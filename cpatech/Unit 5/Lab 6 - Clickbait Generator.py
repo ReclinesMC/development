@@ -1,8 +1,8 @@
 # Sean A
 # Clickbait Generator
 # Using word lists and template headlines, randomly generate clickbait titles
-import random as r
 import os as s
+import random as r
 
 OBJECT_PRONOUNS = ["Her", "Him", "Them"]
 POSSESSIVE_PRONOUNS = ["Her", "His", "Their"]
@@ -11,9 +11,9 @@ STATES = [
 	"Pennsylvania", "California", "Wyoming", "Maryland", "Florida", "Ohio", "Georgia",
 	"New Hampshire", "Illinois", "Michigan", "North Carolina", "Texas", "Nebraska"]
 NOUNS = ["Athlete", "Clown", "Shovel", "Doctor", "Parent", "Cat", "Dog", "Chicken", "Robot",
-		 "Video Game", "Avocado", "Plastic Straw", "Serial Killer", "Telephone Psychic"]
+         "Video Game", "Avocado", "Plastic Straw", "Serial Killer", "Telephone Psychic"]
 PLACES = ["House", "Attic", "Bank Deposit Box", "School", "Basement", "Workplace",
-		  "Donut Shop", "Apocalypse Bunker"]
+          "Donut Shop", "Apocalypse Bunker"]
 WHEN = ["Soon", "This Year", "Later Today", "RIGHT NOW", "Next Week"]
 
 

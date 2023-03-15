@@ -5,6 +5,5 @@
 numInput = int(input("Enter the first number that you would like to check:"))
 numInput2 = int(input("Enter the second number that you would like to check:"))
 
-
 if numInput % 2 == 0 and numInput2 % 2 == 0:
-  print("\nTrue")
+	print("\nTrue")

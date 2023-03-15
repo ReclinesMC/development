@@ -31,4 +31,3 @@ print(123 + 42)
 # The line is indented when it does not need to be
 # This is a compile error
 print("Pink dogs and green hogs")
-

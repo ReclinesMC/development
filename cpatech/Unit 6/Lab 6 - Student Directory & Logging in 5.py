@@ -1,9 +1,10 @@
 # Sean A
 # Student Directory and logins
 # Make the student directory work with files along with allowing the admin user to modify other users
-import FileTools as ft
-import time as t
 import os as s
+import time as t
+
+import FileTools as ft
 
 studentDirectory = {}
 
@@ -160,7 +161,8 @@ def createStudent(adminID):
 
 	gpa = input("GPA: ")
 	password = input("Password: ")
-	studentDirectory[studentID] = [password, firstName.capitalize(), lastName.capitalize(), middleName.capitalize(), dob, str(grade), gpa]
+	studentDirectory[studentID] = [password, firstName.capitalize(), lastName.capitalize(), middleName.capitalize(),
+	                               dob, str(grade), gpa]
 	print("Please review the information above.")
 	input("Press enter to continue...")
 	writeOutStudentInfo()

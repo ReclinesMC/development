@@ -2,8 +2,8 @@
 # Number Guessser
 # Let the users guess a randomly generated number for as long as they want with loops!
 
-from random import randint
 import os
+from random import randint
 
 num = randint(1, 100)
 

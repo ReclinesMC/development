@@ -6,4 +6,4 @@
 names = ["Aang", "Katara", "Toph", "Sokka", "Zuko"]
 
 for namescount in names:
-  print("Welcome {}!".format(namescount))
+	print("Welcome {}!".format(namescount))

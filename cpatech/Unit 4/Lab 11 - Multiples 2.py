@@ -30,4 +30,3 @@ elif number == 0:
 	print("Every number is a factor of 0.")
 else:
 	print("You must enter a valid, positive integer")
-

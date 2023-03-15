@@ -1,8 +1,8 @@
 # Sean A
 # Create a read function
 # Using the new operators we have learned, create a function that allows reading a file
-import re
 import os as s
+import re
 
 
 def validateFileName(fileName):

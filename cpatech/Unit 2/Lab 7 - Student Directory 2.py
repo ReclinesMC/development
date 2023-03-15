@@ -4,10 +4,10 @@
 
 
 studentDirectory = {
-  2345589 : ["Willow", "Ivy", "Park", "3/21/2007", 10, 4.2],
-  4017830 : ["Augustus", "James", "Porter", "10/4/2009", 9, 3.78],
-  6120173 : ["Amity", "Marie", "Blight", "11/19/2007", 10, 4.4],
-  7202742 : ["Luz", "Rosa", "Noceda", "6/13/2007", 10, 3.4]
+	2345589: ["Willow", "Ivy", "Park", "3/21/2007", 10, 4.2],
+	4017830: ["Augustus", "James", "Porter", "10/4/2009", 9, 3.78],
+	6120173: ["Amity", "Marie", "Blight", "11/19/2007", 10, 4.4],
+	7202742: ["Luz", "Rosa", "Noceda", "6/13/2007", 10, 3.4]
 }
 
 # Student Registration
@@ -23,7 +23,7 @@ studentGPA = float(input("Student GPA:"))
 print()
 
 print("< >".center(50, "~"))
-newStudentInfo = {studentID : [studentFirst, studentMid, studentLast, studentDOB, studentGrade, studentGPA]}
+newStudentInfo = {studentID: [studentFirst, studentMid, studentLast, studentDOB, studentGrade, studentGPA]}
 studentDirectory.update(newStudentInfo)
 
 # Grabbing ID
@@ -34,12 +34,10 @@ print("{  }".center(50, "-"))
 
 # Printing Student Info
 print("[ Student Information ]".center(50, "="))
-print("\nFull Name: {} {} {}".format(studentDirectory[studentID][0], studentDirectory[studentID][1], studentDirectory[studentID][2]))
+print("\nFull Name: {} {} {}".format(studentDirectory[studentID][0], studentDirectory[studentID][1],
+                                     studentDirectory[studentID][2]))
 print("Student ID: {}".format(studentID))
 print("DOB: {}".format(studentDirectory[studentID][3]))
 print("Grade: {}".format(studentDirectory[studentID][4]))
 print("GPA: {}\n".format(studentDirectory[studentID][5]))
 print("".center(50, "="))
-
-
-

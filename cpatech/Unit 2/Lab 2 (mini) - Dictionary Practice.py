@@ -3,18 +3,18 @@
 # Practicing interactions with dictionaries to learn more about how they work
 
 dictA = {}
-dictB = {"Apple":"Red", "Banana":"Yellow"}
+dictB = {"Apple": "Red", "Banana": "Yellow"}
 
 # Adding to A
 # 3 lines
 dictA["Dragon"] = "Purple"
 dictA["Unicorn"] = "Rainbow"
-dictA.update({"Werewolf":"Gray", "Yeti":"White", "Fairy":"Golden"})
+dictA.update({"Werewolf": "Gray", "Yeti": "White", "Fairy": "Golden"})
 
 # Adding to B
 # 2 lines
-dictB.update({"Blueberry":"Blue", "Orange":"Orange", "Pineapple":"Gold"})
-dictB.update({"Watermelon":"Green", "Grape":"Purple", "Lime":"Lime"})
+dictB.update({"Blueberry": "Blue", "Orange": "Orange", "Pineapple": "Gold"})
+dictB.update({"Watermelon": "Green", "Grape": "Purple", "Lime": "Lime"})
 
 # Displaying
 print(dictA)

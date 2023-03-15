@@ -26,7 +26,3 @@ if len(originBday[0]) != 2 or len(originBday[1]) != 2 or len(originBday[2]) != 4
 	print("It will now be stored in our records.")
 else:
 	print("\n{} will be stored in our records.".format(userBday))
-
-
-
-

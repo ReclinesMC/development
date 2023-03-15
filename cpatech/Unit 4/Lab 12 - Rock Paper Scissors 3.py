@@ -1,9 +1,9 @@
 # Sean A
 # Rock Paper Scissors
 # Use loops to determine a winner in a 3-round match
+import os
 import time
 from random import choice
-import os
 
 rps = ["Rock", "Paper", "Scissors"]
 
@@ -75,4 +75,3 @@ elif pwins == 2:
 print("\nFinal Score")
 print(f"Player: {pwins}")
 print(f"Computer: {cwins}")
-
