@@ -50,4 +50,4 @@ if __name__ == "__main__":
 	ft.handleFile(outputFile, "create", leetText)
 	t.sleep(0.5)
 
-	print(f"\nSuccess! {fileName} has been converted to leetspeak!")
+	print(f"\nSuccess! {fileName}.txt has been converted to leetspeak!")
