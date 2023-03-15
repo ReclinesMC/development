@@ -42,11 +42,14 @@ def validateFileExists(fileName):
 
 
 def readFile(fileName):
-	try:
-		with open(fileName, 'r') as openFile:
-			return openFile.read()
-	except:
-		return None
+	with open(fileName, 'r') as openFile:
+		return openFile.read()
+	# try:
+	# 	with open(fileName, 'r') as openFile:
+	# 		return openFile.read()
+	# except:
+	# 	print("An error occured while reading the file")
+	# 	return None
 
 
 def parseFile(fileName):
@@ -54,6 +57,7 @@ def parseFile(fileName):
 		with open(fileName, 'r') as openFile:
 			return openFile.readlines()
 	except:
+		print("An error occured while parsing the file")
 		return None
 
 
@@ -89,7 +93,6 @@ def fileCleaner(unClean):
 		unClean = ''.join(unClean)
 
 	clean = ""
-	# noinspection SpellCheckingInspection
 	alphabet = "abcdefghijklmnopqrstuvwxyz"
 	for text in unClean:
 		if text.lower() in alphabet:
