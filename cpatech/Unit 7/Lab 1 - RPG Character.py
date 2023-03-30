@@ -4,8 +4,6 @@
 import random as r
 
 
-
-
 class Character:
 
 	def __init__(self, name, chartype, weapon, strength, dexterity, wisdom, intelligence, charisma):
@@ -33,6 +31,7 @@ class Character:
 	def swap_weapon(self, weapon):
 		print(f"{self.name} swapped from a {self.weapon} to a {weapon}")
 		self.weapon = weapon
+
 	def heal(self, HP):
 		self.HP += HP
 		if self.HP > self.maxHP:
@@ -48,13 +47,14 @@ class Character:
 		self.HP = self.maxHP
 		self.SP += 5
 		self.BP += 1
-		self.EXP += 5
+		self.level += 5
 		self.attack += 5
+
 	def character_sheet(self):
 		print(f" {self.name} the {self.chartype} ".center(50, "~"))
 		print(f"✨ Level {self.level} ✨".ljust(20).rjust(38))
 		print(f"❤️  {self.HP}/{self.maxHP}  ❤️".ljust(20).rjust(38))
-		print(f"🔪 {self.weapon} 🔪".ljust(20).rjust(38))
+		print(f"🔪 {self.weapon} 🔪".ljust(20).rjust(37))
 		print(f"💪 {self.strength} Strength ".ljust(15).rjust(25), end="")
 		print(f"👟 {self.dexterity} Dexterity ")
 		print(f"🦉 {self.wisdom} Wisdom ".ljust(15).rjust(25), end="")
@@ -64,7 +64,6 @@ class Character:
 		print(f"🔮 {self.SP} SP".ljust(15).rjust(25), end="")
 		print(f"🔥 {self.BP} BP")
 		print("~" * 50)
-
 
 
 def main():
