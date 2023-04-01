@@ -1,6 +1,6 @@
 # Sean
 # Examine and fix code
-# View code and see what it does, afterwards fix the code if it does not work
+# View code and see what it does, afterward fix the code if it does not work
 
 print(14 + 10)  # This code works correctly by adding the two numbers
 print(14 + 10)  # This code needed to be fixed by removing quotes to make it add the numbers

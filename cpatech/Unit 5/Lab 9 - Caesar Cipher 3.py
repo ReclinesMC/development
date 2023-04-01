@@ -647,130 +647,130 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 
 class InvalidUserInput(Exception):
-	pass
+    pass
 
 
 def isEncryptOrDecrypt(text):
-	if text.lower() == "encrypt":
-		return text
-	elif text.lower() == "decrypt":
-		return text
+    if text.lower() == "encrypt":
+        return text
+    elif text.lower() == "decrypt":
+        return text
 
-	raise InvalidUserInput("Invalid user input, not 'encrypt' or 'decrypt'")
+    raise InvalidUserInput("Invalid user input, not 'encrypt' or 'decrypt'")
 
 
 def getUserChoice():
-	try:
-		# Checks if the user wants to encrypt or decrypt and saves their choice
-		userInput = input(
-			"Would you like to encrypt or decrypt using the Caesar Cipher?")
-		return isEncryptOrDecrypt(userInput)
-	except InvalidUserInput:
-		s.system("clear")
-		print("Please enter \"encrypt\" or \"decrypt\"")
-		return getUserChoice()
+    try:
+        # Checks if the user wants to encrypt or decrypt and saves their choice
+        userInput = input(
+            "Would you like to encrypt or decrypt using the Caesar Cipher?")
+        return isEncryptOrDecrypt(userInput)
+    except InvalidUserInput:
+        s.system("clear")
+        print("Please enter \"encrypt\" or \"decrypt\"")
+        return getUserChoice()
 
 
 def getUserInput(encryptOrDecrypt):
-	# Gets the the text to be encrypted/decrypted
-	print(f"What text would you like to {encryptOrDecrypt}?")
-	text = input(">").lower()
-	return text
+    # Gets the the text to be encrypted/decrypted
+    print(f"What text would you like to {encryptOrDecrypt}?")
+    text = input(">").lower()
+    return text
 
 
 def getCipherKey(text, userChoice):
-	# Grabs the key (and makes sure it is an int) to be used for encryption/decryption
-	count = ""
-	while type(count) != int:
-		try:
-			print(f"What key would you like to use for {userChoice}ion?")
-			if userChoice == "decrypt":
-				print("If you do not have access to the key, press ENTER to bruteforce")
-			count = int(input("> "))
-		except:
-			if userChoice == "decrypt" and count == "":
-				return count
-			else:
-				s.system("clear")
-				t.sleep(0.1)
-				print("You must enter a valid integer.")
-				print(f"Text to be {userChoice}ed: \"{text}\"")
-				continue
-		if count < 1:
-			s.system("clear")
-			t.sleep(0.1)
-			print("You must enter a positive integer.")
-			print(f"Text to be {userChoice}ed: \"{text}\"")
-			count = ""
-			continue
-	return count
+    # Grabs the key (and makes sure it is an int) to be used for encryption/decryption
+    count = ""
+    while type(count) != int:
+        try:
+            print(f"What key would you like to use for {userChoice}ion?")
+            if userChoice == "decrypt":
+                print("If you do not have access to the key, press ENTER to bruteforce")
+            count = int(input("> "))
+        except:
+            if userChoice == "decrypt" and count == "":
+                return count
+            else:
+                s.system("clear")
+                t.sleep(0.1)
+                print("You must enter a valid integer.")
+                print(f"Text to be {userChoice}ed: \"{text}\"")
+                continue
+        if count < 1:
+            s.system("clear")
+            t.sleep(0.1)
+            print("You must enter a positive integer.")
+            print(f"Text to be {userChoice}ed: \"{text}\"")
+            count = ""
+            continue
+    return count
 
 
 def encrypter(text, key):
-	cryptedMsg = []
-	for i in range(len(text)):
-		# Letters
-		if text[i] in alphabet:
-			cryptedMsg.append(alphabet[(key + alphabet.index(text[i])) % 26])
-		else:
-			cryptedMsg.append(text[i])
+    cryptedMsg = []
+    for i in range(len(text)):
+        # Letters
+        if text[i] in alphabet:
+            cryptedMsg.append(alphabet[(key + alphabet.index(text[i])) % 26])
+        else:
+            cryptedMsg.append(text[i])
 
-	cryptedMsg = ''.join(cryptedMsg)
-	return cryptedMsg
+    cryptedMsg = ''.join(cryptedMsg)
+    return cryptedMsg
 
 
 def decrypter(text, key):
-	decryptedMsg = []
-	if key == "":
-		bruteForce(text)
-	else:
-		for i in range(len(text)):
-			#  Letters
-			if text[i] in alphabet:
-				decryptedMsg.append(alphabet[abs(
-					(alphabet.index(text[i]) - key) % 26)])
-			# Numbers, symbols, spaces
-			else:
-				decryptedMsg.append(text[i])
+    decryptedMsg = []
+    if key == "":
+        bruteForce(text)
+    else:
+        for i in range(len(text)):
+            #  Letters
+            if text[i] in alphabet:
+                decryptedMsg.append(alphabet[abs(
+                    (alphabet.index(text[i]) - key) % 26)])
+            # Numbers, symbols, spaces
+            else:
+                decryptedMsg.append(text[i])
 
-		decryptedMsg = ''.join(decryptedMsg)
-		return decryptedMsg
+        decryptedMsg = ''.join(decryptedMsg)
+        return decryptedMsg
 
 
 def bruteForce(text):
-	# Bruteforces the key
-	print("Bruteforcing... please wait")
-	s.system("clear")
-	t.sleep(0.1)  # Delay in case of system clear breaking
-	for i in range(26):
-		decrypted = decrypter(text, i)
-		print(f"\n{i}: {decrypted}")
+    # Bruteforces the key
+    print("Bruteforcing... please wait")
+    s.system("clear")
+    t.sleep(0.1)  # Delay in case of system clear breaking
+    for i in range(26):
+        decrypted = decrypter(text, i)
+        print(f"\n{i}: {decrypted}")
 
 
 def printResults(text, key, userChoice, msg):
-	# Prints the results using the variables/info given
-	s.system("clear")
-	t.sleep(0.1)
-	print(f"Original: \n{text}")
-	print(f"\n{userChoice.capitalize()}ed: \n{msg}")
-	print(f"\nKey: {key}")
+    # Prints the results using the variables/info given
+    s.system("clear")
+    t.sleep(0.1)
+    print(f"Original: \n{text}")
+    print(f"\n{userChoice.capitalize()}ed: \n{msg}")
+    print(f"\nKey: {key}")
 
 
 def main():
-	# Get all variables
-	userChoice = getUserChoice()
-	userInput = getUserInput(userChoice)
-	cipherKey = getCipherKey(userInput, userChoice)
-	# Print the results
-	if userChoice == "encrypt":
-		encryptedMsg = encrypter(userInput, cipherKey)
-		printResults(userInput, cipherKey, userChoice, encryptedMsg)
+    # Get all variables
+    userChoice = getUserChoice()
+    userInput = getUserInput(userChoice)
+    cipherKey = getCipherKey(userInput, userChoice)
+    # Print the results
+    if userChoice == "encrypt":
+        encryptedMsg = encrypter(userInput, cipherKey)
+        printResults(userInput, cipherKey, userChoice, encryptedMsg)
 
-	elif userChoice == "decrypt":
-		decryptedMsg = decrypter(userInput, cipherKey)
-		if cipherKey != "":
-			printResults(userInput, cipherKey, userChoice, decryptedMsg)
+    elif userChoice == "decrypt":
+        decryptedMsg = decrypter(userInput, cipherKey)
+        if cipherKey != "":
+            printResults(userInput, cipherKey, userChoice, decryptedMsg)
 
 
 if __name__ == "__main__":
-	main()
+    main()

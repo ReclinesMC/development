@@ -24,29 +24,29 @@ print()
 
 # User chooses rock
 if userChoice == "Rock":
-	if pyChoice == "Paper":
-		print("You lose!")
-	elif pyChoice == "Scissors":
-		print("You win!")
-	elif pyChoice == "Rock":
-		print("It's a tie!")
+    if pyChoice == "Paper":
+        print("You lose!")
+    elif pyChoice == "Scissors":
+        print("You win!")
+    elif pyChoice == "Rock":
+        print("It's a tie!")
 
 # User chooses paper
 elif userChoice == "Paper":
-	if pyChoice == "Scissors":
-		print("You lose!")
-	elif pyChoice == "Rock":
-		print("You win!")
-	elif pyChoice == "Paper":
-		print("It's a tie!")
+    if pyChoice == "Scissors":
+        print("You lose!")
+    elif pyChoice == "Rock":
+        print("You win!")
+    elif pyChoice == "Paper":
+        print("It's a tie!")
 
 # User chooses scissors
 elif userChoice == "Scissors":
-	if pyChoice == "Rock":
-		print("You lose!")
-	elif pyChoice == "Paper":
-		print("You win!")
-	elif pyChoice == "Scissors":
-		print("It's a tie!")
+    if pyChoice == "Rock":
+        print("You lose!")
+    elif pyChoice == "Paper":
+        print("You win!")
+    elif pyChoice == "Scissors":
+        print("It's a tie!")
 else:
-	print("Unable to determine a result, you may have typed your choice incorrectly.")
+    print("Unable to determine a result, you may have typed your choice incorrectly.")

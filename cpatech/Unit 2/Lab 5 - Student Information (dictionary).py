@@ -3,13 +3,13 @@
 # Refrencing dictionaries to grab student information to practice using dictionaries
 
 studentInfo = {
-	"ID": 4017830,
-	"first": "Augustus",
-	"middle": "James",
-	"last": "Porter",
-	"DOB": "10/4/2009",
-	"Grade": 9,
-	"GPA": 3.78
+    "ID": 4017830,
+    "first": "Augustus",
+    "middle": "James",
+    "last": "Porter",
+    "DOB": "10/4/2009",
+    "Grade": 9,
+    "GPA": 3.78
 }
 
 print("[ Student Information ]".center(50, "="))

@@ -7,5 +7,5 @@ names = ["Aang", "Katara", "Toph", "Sokka", "Zuko"]
 count = 0
 
 while count < len(names):
-	print("Welcome {}!".format(names[count]))
-	count = count + 1
+    print("Welcome {}!".format(names[count]))
+    count = count + 1

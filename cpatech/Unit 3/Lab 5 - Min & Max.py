@@ -7,6 +7,6 @@ numInput = int(input("Enter the first number you would like to compare:"))
 numInput2 = int(input("Enter the first number you would like to compare:"))
 
 if numInput > numInput2:
-	print("{} is larger than {}!".format(numInput, numInput2))
+    print("{} is larger than {}!".format(numInput, numInput2))
 else:
-	print("{} is smaller than {}!".format(numInput, numInput2))
+    print("{} is smaller than {}!".format(numInput, numInput2))
