@@ -3,7 +3,7 @@ import subprocess as s
 import multiprocessing as mp
 import os
 
-randoNum = 1
+randoNum = 5
 name = os.path.splitext(os.path.basename(__file__))[0]
 
 contents = f'''
@@ -12,7 +12,7 @@ import random as r
 import subprocess as s
 import multiprocessing as mp
 import os
-
+name = os.path.splitext(os.path.basename(__file__))[0]
 
 def runFile(i):
     filename = "python " + str(i) + ".py"
@@ -24,14 +24,14 @@ def handleFile(i):
     if not os.path.isfile(file):
         m.writeFile(f"{{i}}.py", m.contents)
     runFile(i)
-    print(f"Created {{i}}.py!")
 
 
 def main():
-    for a in range(10):
+    for a in range(1):
         i = r.randint(0, 10)
         if __name__ == "__main__":
             mp.Process(target=handleFile, args=(i,)).start()
+            print(name)
 
 
 main()
@@ -44,6 +44,7 @@ def writeFile(fileName, contents):
         for i in contents:
             openFile.write(str(i))
             fileContents += str(i)
+    print(f"Created {fileName}.py!")
 
 
 def runFile(i):
@@ -56,7 +57,6 @@ def handleFile(i):
     if not os.path.isfile(file):
         writeFile(f"{i}.py", contents)
     runFile(i)
-    print(f"Created {i}.py!")
 
 
 def main():
