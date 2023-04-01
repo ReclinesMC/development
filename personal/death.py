@@ -1,13 +1,10 @@
 import random as r
 import subprocess as s
 
-padkjfnouienasuobfigbiou3qbwefd
+adkjghkudhgkuydhilbzfsiubgfdzldg
 
 randoNum = 100000
-name = __name__
-
-if __name__ == "__main__":
-	name = "main"
+name = os.path.basename(__file__)
 
 contents = f'''
 import {name} as m
