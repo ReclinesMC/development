@@ -1,4 +1,6 @@
-import {name} as m
+import
+
+{name} as m
 import random as r
 import subprocess as s
 import multiprocessing as mp

