@@ -87,7 +87,7 @@ class Fighter(Character):
         self.strength += 10
 
     def take_damage(self, damage):
-        if r.random() <= 0.3:
+        if r.randint(0, 100) <= 30:
             print(f"{self.name} blocked the attack!")
         else:
             super().take_damage(damage)
@@ -101,7 +101,7 @@ class Rogue(Character):
         self.dexterity += 10
 
     def take_damage(self, damage):
-        if r.random() <= (self.level / 10):
+        if r.randint(0, 100) <= self.level * 2.5:
             print(f"{self.name} dodged the attack!")
         else:
             super().take_damage(damage)
@@ -117,6 +117,10 @@ class Sorcerer(Character):
 
     def cast_fireball(self):
         self.SP -= 10
+        if self.SP < 0:
+            print(f"{self.name} did not have enough SP")
+            self.SP += 10
+            return False
         print(f"{self.name} cast a Fireball! They are now at {self.SP} SP")
 
 
@@ -131,7 +135,8 @@ class Wizard(Character):
     def cast_healingHands(self, other):
         self.SP -= 30
         if self.SP < 0:
-            print("Not enough SP!")
+            print(f"{self.name} did not have enough SP")
+            self.SP += 30
             return False
         other.HP = other.maxHP
         print(f"{self.name} cast Healing Hands on {other.name}! They are now at {other.HP} HP")
@@ -147,11 +152,19 @@ class Bard(Character):
         self.charisma += 10
 
     def gift_of_life(self, other):
-        if r.random() <= (self.charisma * 1.5 / 100):
-            self.HP += 15
-            other.HP -= 15
-            print(f"{self.name} convinced {other.name} to donate 15 HP! They are now at {self.HP} HP")
-            print(f"{other.name} is now at {other.HP} HP")
+        if r.randint(0, 100) <= self.charisma * 1.2:
+            if other.HP >= 15:
+                self.HP += 15
+                other.HP -= 15
+                print(f"{self.name} convinced {other.name} to donate 15 HP! They are now at {self.HP} HP")
+                print(f"{other.name} is now at {other.HP}/{other.maxHP} HP")
+            elif 15 > other.HP > 0:
+                self.HP += other.HP
+                other.HP = 0
+                print(f"{self.name} convinced {other.name} to donate all of their HP! They are now at {self.HP} HP")
+                print(f"{other.name} is now at {other.HP}/{other.maxHP} HP")
+            else:
+                print(f"{other.name} had no HP to donate!")
         else:
             print(f"{self.name} failed to convince {other.name} to donate 15 HP!")
 
