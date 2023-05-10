@@ -1,0 +1,11 @@
+# This file is used to save player data and positioning
+
+Player:
+  Name: ""
+  Health: 0
+  Level: 0
+  Inventory: { }
+
+Map:
+  Layout: [ ]
+  Difficulty: 0
