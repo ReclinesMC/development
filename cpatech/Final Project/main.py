@@ -4,11 +4,11 @@
 
 import os
 import time as t
-import yaml
-import saving
-import player as p
 import map as m
+import saving
 
+
+# If you see t.sleep(0.1) its to fix the screen clearing bug with trinket
 
 def main():
     # Title
@@ -17,16 +17,16 @@ def main():
     input("\n" + "Press ENTER to start your journey".center(60) + "\n".center(60))
     os.system('clear')
     saving.checkSave()
-    t.sleep(5)
+    t.sleep(0.5)
     os.system('clear')
     t.sleep(0.1)
-    map = introducePlayer()
-    print(map)
+    mapLayout = introducePlayer()
+    print(mapLayout)
 
 
 def introducePlayer():
     path = ""
-    delay = 2
+    delay = 0.1
     print("You are a young adventurer")
     t.sleep(delay)
     print("Your goal is to defeat the evil dragon")
@@ -49,11 +49,11 @@ def introducePlayer():
         print("2. Right 🔥")
         path = input("\nChoose a path >>")
         if path == "1":
-            map = m.Map().genLeft()
-            return map
+            mapLayout = m.Map().genLeft()
+            return mapLayout
         elif path == "2":
-            map = m.Map().genRight()
-            return map
+            mapLayout = m.Map().genRight()
+            return mapLayout
         else:
             print("\nIncorrect Input! A number is required")
             input("Press ENTER to continue")
@@ -62,7 +62,3 @@ def introducePlayer():
 
 if __name__ == "__main__":
     main()
-
-
-
-

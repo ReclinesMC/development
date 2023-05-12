@@ -1,9 +1,9 @@
-import enemies
 import weapons
 
 
 class Person:
     def __init__(self):
+        #
         self.name = ""
         self.weapon = weapons.Pencil()
         self.inventory = []

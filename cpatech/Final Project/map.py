@@ -1,4 +1,7 @@
 import random as r
+import os
+import time as t
+import gui
 
 
 class Map:
@@ -7,48 +10,49 @@ class Map:
         self.maps = [Dungeon(), EmptyRoom(), TreasureRoom()]
 
     def genLeft(self):
-        map = []
+        mapLayout = []
         for i in range(9 + self.difficulty):
             room = r.randint(1, 2)
-            map.append(self.maps[room])
-        map.append(BossRoom())
-        print(map)
-        return map
+            mapLayout.append(self.maps[room])
+        mapLayout.append(BossRoom())
+        return mapLayout
 
     def genRight(self):
-        map = []
+        mapLayout = []
         for i in range(9 + self.difficulty):
             room = r.randint(0, 1)
-            map.append(self.maps[room])
-        map.append(BossRoom())
-        print(map)
-        return map
-
-    # PathL will have a higher chance of dungeons
-
-
-# PathR higher chance of treasure
+            mapLayout.append(self.maps[room])
+        mapLayout.append(BossRoom())
+        return mapLayout
 
 
 class Dungeon:
+    def enter(self):
+        print("You have entered a dungeon")
+        gui.actionMenu()
+
     def __repr__(self):
-        return "Dungeon Room"
+        return "Dungeon"
 
 
 class TreasureRoom:
     def __repr__(self):
-        return "Treasure Room"
+        return "Treasure"
 
 
 class BossRoom:
     def __repr__(self):
-        return "Boss Room"
+        return "Boss"
 
 
 class EmptyRoom:
     def __repr__(self):
-        return "Empty Room"
+        return "Empty"
 
 
 class Shop:
-    pass
+    def __init__(self):
+        os.system("clear")
+        t.sleep(0.1)
+        print("Welcome to the shop!")
+        print("What would you like to buy?")

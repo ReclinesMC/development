@@ -1,6 +1,6 @@
 class Weapons:
-  pass
+    pass
 
 
 class Pencil:
-  pass
+    pass
