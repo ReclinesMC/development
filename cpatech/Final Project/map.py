@@ -7,47 +7,62 @@ import gui
 class Map:
     def __init__(self, difficulty=1):
         self.difficulty = difficulty
-        self.maps = [Dungeon(), EmptyRoom(), TreasureRoom()]
+        self.maps = [Dungeon(), Empty(), Treasure()]
 
     def genLeft(self):
         mapLayout = []
-        for i in range(9 + self.difficulty):
+        mapLayout.append(Treasure())
+        for i in range(8 + self.difficulty):
             room = r.randint(1, 2)
             mapLayout.append(self.maps[room])
-        mapLayout.append(BossRoom())
+        mapLayout.append(Boss())
         return mapLayout
 
     def genRight(self):
         mapLayout = []
-        for i in range(9 + self.difficulty):
+        mapLayout.append(Dungeon())
+        for i in range(8 + self.difficulty):
             room = r.randint(0, 1)
             mapLayout.append(self.maps[room])
-        mapLayout.append(BossRoom())
+        mapLayout.append(Boss())
         return mapLayout
 
 
-class Dungeon:
+class Rooms:
+    def __init__(self):
+        self.room = None
+
     def enter(self):
-        print("You have entered a dungeon")
+        print(f"You have entered a {self.room} room")
         gui.actionMenu()
 
     def __repr__(self):
-        return "Dungeon"
+        return str(self.room)
 
 
-class TreasureRoom:
-    def __repr__(self):
-        return "Treasure"
+class Dungeon(Rooms):
+    def __init__(self):
+        super().__init__()
+        self.room = "Dungeon"
 
 
-class BossRoom:
-    def __repr__(self):
-        return "Boss"
+class Treasure(Rooms):
+
+    def __init__(self):
+        super().__init__()
+        self.room = "Treasure"
 
 
-class EmptyRoom:
-    def __repr__(self):
-        return "Empty"
+class Boss(Rooms):
+    def __init__(self):
+        super().__init__()
+        self.room = "Boss"
+
+
+class Empty(Rooms):
+    def __init__(self):
+        super().__init__()
+        self.room = "Empty"
 
 
 class Shop:

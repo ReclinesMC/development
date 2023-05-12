@@ -3,8 +3,6 @@ import weapons
 
 class Person:
     def __init__(self):
-        #
-        self.name = ""
         self.weapon = weapons.Pencil()
         self.inventory = []
         self.coins = 0
